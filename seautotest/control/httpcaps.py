@@ -20,4 +20,4 @@ class Runmian:
             res = self.send_get(url,data,headers)
         else:
             res = self.send_post(url,data,headers)
-        return res
+        return  res

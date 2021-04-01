@@ -27,13 +27,12 @@ class Excel():
             sheet = self.workbook.sheet_by_name(sheet_name)
             # 获取总行数
             rosw = sheet.nrows
-            # 根据总行数进行读取
+            # 遍历取数
             for i in range(0, rosw):
                 rowvalues = sheet.row_values(i)
-                # 讲每一行的内容添加进去
+                # 添加到list
                 self.list_data.append(rowvalues)
-            #     去除大标题第一行进行切割处理
-        # 将得到的excel数据返回进行处理
+        # 将得到的list返回进行处理
         return self.list_data
 # 测试excel内容提取
 # if __name__ == '__main__':
