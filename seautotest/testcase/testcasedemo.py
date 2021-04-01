@@ -1,5 +1,4 @@
 import unittest
-from HTMLTestRunner import HTMLTestRunner
 
 import requests
 import json
