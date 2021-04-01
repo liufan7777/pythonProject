@@ -32,5 +32,5 @@ looger.addHandler(file_handler)
 looger.addHandler(console_handler)
 
 #指定日志级别默认warning
-# DEBUG，INFO，WARNING，ERROR，CRITICAL1
+# DEBUG，INFO，WARNING，ERROR，CRITICAL
 looger.setLevel(logging.INFO)
