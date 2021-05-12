@@ -3,7 +3,7 @@ import logging
 import sys
 from pathlib import Path
 
-from seautotest.control.utils import mkdir
+from seautotest.utils.fileutils import mkdir
 
 
 def today():
@@ -20,7 +20,7 @@ formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(filename)s line:%(l
 mkdir("log")
 
 # 文件日志
-log_file = str(Path('log') / '{}.log'.format(today()))
+log_file = str(Path('../control/log') / '{}.log'.format(today()))
 file_handler = logging.FileHandler(log_file, mode="a", encoding="utf-80", delay=False)
 file_handler.setFormatter(formatter)
 

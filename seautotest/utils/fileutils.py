@@ -37,6 +37,7 @@ class Excel():
         return self.list_data
 
 
+
 # 测试excel内容提取
 # if __name__ == '__main__':
 #     files = "../element/element.xls"
@@ -52,12 +53,12 @@ def element_tojson(element):
     return elements
 
 
-# if __name__ == '__main__':
-#     files = "../element/element.xls"
-#     e = Excel("r" , files)
-#     list_read = e.read()
-#     ele = element_tojson(list_read)
-#     print(ele["埋点接口"]["url"])
+if __name__ == '__main__':
+    files = "../element/element.xls"
+    e = Excel("r" , files)
+    list_read = e.read()
+    ele = element_tojson(list_read)
+    print(ele["埋点接口"]["url"])
 # 创建文件
 def mkdir(p):
     path = Path(p)
